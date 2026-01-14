@@ -44,24 +44,58 @@ document.write("<h2>Hola Mundo desde el DOM</h2>"); // Lo escribe en al final de
 
 
 */
-//https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
+// https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
 /*
-console.log("**********     Curso JavaScript: 62. DOM: Nodos, Elementos y Selectores - #jonmircha     **********");
-console.log(document.getElementsByTagName("li"));
-console.log(document.getElementsByClassName("card"));
-console.log(document.getElementsByName("nombre"));
-console.log(document.getElementById("menu"));
-console.log(document.querySelector("#menu"));
-console.log(document.querySelector("a"));
-console.log(document.querySelectorAll("a"));
-console.log(document.querySelectorAll("a").length);
-document.querySelectorAll("a").forEach((el) => console.log(el));
-console.log(document.querySelector(".card"));
-console.log(document.querySelectorAll(".card"));
-console.log(document.querySelectorAll(".card")[2]);
-console.log(document.querySelector("#menu li"));
-console.log(document.querySelectorAll("#menu li"));
+document.nodeType === Node.DOCUMENT_NODE; // true
+Valores del tipo de nodo que es
+1 ELEMENT_NODE
+2 ATTRIBUTE_NODE Obsoleto
+3 TEXT_NODE
+4 CDATA_SECTION_NODE Obsoleto
+5 ENTITY_REFERENCE_NODE Obsoleto
+6 ENTITY_NODE Obsoleto
+7 PROCESSING_INSTRUCTION_NODE
+8 COMMENT_NODE
+9 DOCUMENT_NODE
+10 DOCUMENT_TYPE_NODE
+11 DOCUMENT_FRAGMENT_NODE
+12 NOTATION_NODE Obsoleto
 */
+/*
+document.nodeType === Node.DOCUMENT_NODE; // true
+document.doctype.nodeType === Node.DOCUMENT_TYPE_NODE; // true
+
+document.createDocumentFragment().nodeType === Node.DOCUMENT_FRAGMENT_NODE; // true
+
+const p = document.createElement("p");
+p.textContent = "Once upon a time…";
+
+p.nodeType === Node.ELEMENT_NODE; // true
+p.firstChild.nodeType === Node.TEXT_NODE; // true
+*/
+// Son nodos no confundir una etiqueta html que para JavaScript es es un elemento, que un nodo. Hay diferentes tipos de no los comentarios de html son nodo, las etiquetas son otro tipo de nodo, los textos como tal, no, para las etiquetas textuales como los párrafos, los encabezados, etcétera, tambien son nodos
+/* 
+console.log("**********     Curso JavaScript: 62. DOM: Nodos, Elementos y Selectores - #jonmircha     **********");
+
+// métodos que no se usan pues ya hay métodos mas optimos
+console.log(`62.1 getElementsByTagName("li")`, document.getElementsByTagName("li"));
+console.log(`62.2 getElementsByClassName("card")`, document.getElementsByClassName("card")); // no requiere el punto pues ya se especifíca en el método
+console.log(`62.3 getElementsByName("nombre")`, document.getElementsByName("nombre")); // se usa para el NAME del elemento que se envia los datos de los formularios HTML, para que sean detectados y poder tomar su valor para ser asignados como variable
+
+// este es popular
+console.log(`62.4 getElementById("menu")`, document.getElementById("menu")); // no requiere el gatito para reconocerlo
+console.log(`62.5 querySelector("#menu")`, document.querySelector("#menu")); // es mas lento que ById, tae le primer elemento encontrado, es una consulta de selector, recive un selector válido de CSS un ID, clase una etiqueta HTML que este en una clase o ID
+console.log(`62.6 querySelector("a")`, document.querySelector("a"));
+console.log(`62.7 querySelectorAll("a")`, document.querySelectorAll("a"));
+console.log(`62.8 querySelectorAll("a").length`, document.querySelectorAll("a").length);
+console.log(`62.9 `)
+document.querySelectorAll("a").forEach((el) => console.log(el));
+console.log(`62.10 querySelector(".card")`, document.querySelector(".card")); // el punto es una clase
+console.log(`62.12 querySelectorAll(".card")`, document.querySelectorAll(".card"));
+console.log(`62.13 querySelectorAll(".card")[2]`, document.querySelectorAll(".card")[2]);
+console.log(`62.14 querySelector("#menu li")`, document.querySelector("#menu li"));
+console.log(`62.15 querySelectorAll("#menu li")`, document.querySelectorAll("#menu li"));
+ */
 /*
 
 
