@@ -1,5 +1,5 @@
-/* **********     Curso JavaScript: 60. WEB APIs - #jonmircha     ********** */
-/* https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model */
+/* console.log("*********     Curso JavaScript: 60. WEB APIs - #jonmircha     *********");
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model */
 /* https://developer.mozilla.org/en-US/docs/Mozilla/Gecko/Chrome/API/Browser_API */
 /* https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model */
 
@@ -16,8 +16,8 @@ hablar(texto); */
 
 
 */
-/* **********     Curso JavaScript: 61. DOM: Introducción - #jonmircha     ********** */
-/* console.log("********** Elementos del Documento **********");
+/* console.log("**********     Curso JavaScript: 61. DOM: Introducción - #jonmircha     **********");
+console.log("********** Elementos del Documento **********");
 console.log(window.document);
 console.log(document);
 console.log(document.head);
@@ -42,9 +42,9 @@ document.write("<h2>Hola Mundo desde el DOM</h2>"); */
 
 
 */
-/* **********     Curso JavaScript: 62. DOM: Nodos, Elementos y Selectores - #jonmircha     ********** */
 //https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
-/* console.log(document.getElementsByTagName("li"));
+/* console.log("**********     Curso JavaScript: 62. DOM: Nodos, Elementos y Selectores - #jonmircha     **********");
+console.log(document.getElementsByTagName("li"));
 console.log(document.getElementsByClassName("card"));
 console.log(document.getElementsByName("nombre"));
 console.log(document.getElementById("menu"));
@@ -65,8 +65,8 @@ console.log(document.querySelectorAll("#menu li")); */
 
 
 */
-/* **********     Curso JavaScript: 63. DOM: Atributos y Data-Attributes - #jonmircha     ********** */
-/* console.log(document.documentElement.lang);
+/* console.log("*********     Curso JavaScript: 63. DOM: Atributos y Data-Attributes - #jonmircha     **********");
+console.log(document.documentElement.lang);
 console.log(document.documentElement.getAttribute("lang"));
 console.log(document.querySelector(".link-dom").href);
 console.log(document.querySelector(".link-dom").getAttribute("href"));
@@ -103,8 +103,8 @@ console.log($linkDOM.hasAttribute("data-id")); */
 
 
 */
-/* **********     Curso JavaScript: 64. DOM: Estilos y Variables CSS - #jonmircha     ********** */
-/* const $linkDOM = document.querySelector(".link-dom");
+/* console.log("*********     Curso JavaScript: 64. DOM: Estilos y Variables CSS - #jonmircha     **********");
+const $linkDOM = document.querySelector(".link-dom");
 
 console.log($linkDOM.style);
 console.log($linkDOM.getAttribute("style"));
@@ -149,8 +149,8 @@ $body.style.setProperty("background-color", varDarkColor); */
 
 
 */
-/* **********     Curso JavaScript: 65. DOM: Clases CSS - #jonmircha     ********** */
-/* const $card = document.querySelector(".card");
+/* console.log("*********     Curso JavaScript: 65. DOM: Clases CSS - #jonmircha     **********");
+const $card = document.querySelector(".card");
 
 console.log($card);
 console.log($card.className);
@@ -178,8 +178,8 @@ $card.classList.toggle("opacity-80", "sepia"); */
 
 
 */
-/* **********     Curso JavaScript: 66. DOM: Texto y HTML - #jonmircha     ********** */
-/* const $whatIsDOM = document.getElementById("que-es");
+/* console.log("*********     Curso JavaScript: 66. DOM: Texto y HTML - #jonmircha     **********");
+const $whatIsDOM = document.getElementById("que-es");
 let text = `
     <p>
       El Modelo de Objetos del Documento (<b><i>DOM - Document Object Model</i></b>) es un API para documentos HTML y XML.
@@ -203,8 +203,8 @@ $whatIsDOM.outerHTML = text; */
 
 
 */
-/* **********     Curso JavaScript: 67. DOM Traversing: Recorriendo el DOM - #jonmircha     ********** */
-/* const $cards = document.querySelector(".cards");
+/* console.log("*********     Curso JavaScript: 67. DOM Traversing: Recorriendo el DOM - #jonmircha     **********");
+const $cards = document.querySelector(".cards");
 
 console.log($cards);
 console.log($cards.children);
@@ -224,8 +224,8 @@ console.log($cards.children[3].closest("section")); */
 
 
  */
-/* **********     Curso JavaScript: 68. DOM: Creando Elementos y Fragmentos - #jonmircha     ********** */
-/* const $figure = document.createElement("figure"),
+/* console.log("*********     Curso JavaScript: 68. DOM: Creando Elementos y Fragmentos - #jonmircha     **********");
+const $figure = document.createElement("figure"),
   $img = document.createElement("img"),
   $figcaption = document.createElement("figcaption"),
   $figcaptionText = document.createTextNode("Animals"),
@@ -302,8 +302,8 @@ document.body.appendChild($ul3); */
 
 
 */
-/* **********     Curso JavaScript: 69. DOM: Templates HTML - #jonmircha     ********** */
-/* const $cards = document.querySelector(".cards"),
+/* console.log("*********     Curso JavaScript: 69. DOM: Templates HTML - #jonmircha     *********");
+const $cards = document.querySelector(".cards"),
   $template = document.getElementById("template-card").content,
   $fragment = document.createDocumentFragment(),
   cardsContent = [
@@ -346,8 +346,8 @@ $cards.appendChild($fragment); */
 
 
 */
-/* **********     Curso JavaScript: 70. DOM: Modificando Elementos (Old Style) - #jonmircha     ********** */
-/* const $cards = document.querySelector(".cards"),
+/* console.log("*********     Curso JavaScript: 70. DOM: Modificando Elementos (Old Style) - #jonmircha     *********");
+const $cards = document.querySelector(".cards"),
   $newCard = document.createElement("figure"),
   $cloneCards = $cards.cloneNode(true);
 
@@ -368,7 +368,7 @@ document.body.appendChild($cloneCards); */
 
 
 */
-/* **********     Curso JavaScript: 71. DOM: Modificando Elementos (Cool Style) - #jonmircha     ********** */
+/* console.log("*********     Curso JavaScript: 71. DOM: Modificando Elementos (Cool Style) - #jonmircha     *********"); */
 /*
 .insertAdjacent...
   .insertAdjacentElement(position, el)
@@ -404,7 +404,7 @@ $newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any"); */
 
 
 */
-/* **********     Curso JavaScript: 72. DOM: Manejadores de Eventos - #jonmircha y Curso JavaScript: 73. DOM: Eventos con Parámetros y Remover Eventos - #jonmircha     ********** */
+/* console.log("*********     Curso JavaScript: 72. DOM: Manejadores de Eventos - #jonmircha y Curso JavaScript: 73. DOM: Eventos con Parámetros y Remover Eventos - #jonmircha     *********"); */
 /*
 Los eventos son los mecanismos que tenemos en JavaScript para controlar las acciones del usuario y definir el comportamiento del documento en cierto momento o cuando se cumplan ciertas condiciones.
 
@@ -461,7 +461,7 @@ $eventoRemover.addEventListener("dblclick", removerDobleClick); */
 
 
 */
-/* **********     Curso JavaScript: 74. DOM: Flujo de Eventos (Burbuja y Captura) - #jonmircha     ********** */
+/* console.log("*********     Curso JavaScript: 74. DOM: Flujo de Eventos (Burbuja y Captura) - #jonmircha     *********"); */
 /*
 Si no se especifica el parámetro boolean, el valor por defecto es false.
   Si el boolean es falso se ejecuta la fase de burbuja (ir del elemento más interno al más externo <body>)
@@ -495,8 +495,8 @@ $divsEventos.forEach((div) => {
 
 
 */
-/* **********     Curso JavaScript: 75. DOM: stopPropagation & preventDefault - #jonmircha     ********** */
-/* const $divsEventos = document.querySelectorAll(".eventos-flujo div"),
+/* console.log("*********     Curso JavaScript: 75. DOM: stopPropagation & preventDefault - #jonmircha     *********");
+const $divsEventos = document.querySelectorAll(".eventos-flujo div"),
   $linkEventos = document.querySelector(".eventos-flujo a");
 
 function flujoEventos(e) {
@@ -532,8 +532,8 @@ $linkEventos.addEventListener("click", (e) => {
 
 
 */
-/* **********     Curso JavaScript: 76. DOM: Delegación de Eventos - #jonmircha     ********** */
-/* function flujoEventos(e) {
+/* console.log("*********     Curso JavaScript: 76. DOM: Delegación de Eventos - #jonmircha     *********");
+function flujoEventos(e) {
   console.log(
     `Hola te saluda ${this} el click lo originó ${e.target.className}`
   );
@@ -558,7 +558,7 @@ document.addEventListener("click", (e) => {
 
 
 */
-/* **********     Curso JavaScript: 77. BOM: Propiedades y Eventos - #jonmircha     ********** */
+/* console.log("*********     Curso JavaScript: 77. BOM: Propiedades y Eventos - #jonmircha     *********"); */
 /*
 El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado y parseado, sin esperar hojas de estilo, imágenes y subtramas para finalizar la carga.
 
@@ -606,7 +606,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 */
-/* **********     Curso JavaScript: 78. BOM: Métodos - #jonmircha     ********** */
+/* console.log("*********     Curso JavaScript: 78. BOM: Métodos - #jonmircha     *********"); */
 //window.alert("Alerta");
 //window.confirm("Confirmación");
 //window.prompt("Aviso");
@@ -634,8 +634,8 @@ $btnImprimir.addEventListener("click", (e) => window.print()); */
 
 
 */
-/* **********     Curso JavaScript: 79. BOM: Objetos: URL, Historial y Navegador - #jonmircha     ********** */
-/* console.log("********** Objeto URL (location) **********");
+/* console.log("*********     Curso JavaScript: 79. BOM: Objetos: URL, Historial y Navegador - #jonmircha     *********");
+console.log("********** Objeto URL (location) **********");
 console.log(location);
 console.log(location.origin);
 console.log(location.protocol);
