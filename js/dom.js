@@ -1,9 +1,9 @@
-/* console.log("*********     Curso JavaScript: 60. WEB APIs - #jonmircha     *********");
-https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model */
+/* https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model */
 /* https://developer.mozilla.org/en-US/docs/Mozilla/Gecko/Chrome/API/Browser_API */
 /* https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model */
-
-/* console.log(window);
+/*
+console.log("*********     Curso JavaScript: 60. WEB APIs - #jonmircha     *********");
+console.log(window);
 console.log(document);
 
 let texto = "Hola, soy tu amigo y docente digital... Jonathan MirCha";
@@ -16,25 +16,27 @@ hablar(texto); */
 
 
 */
-/* console.log("**********     Curso JavaScript: 61. DOM: Introducción - #jonmircha     **********");
-console.log("********** Elementos del Documento **********");
-console.log(window.document);
-console.log(document);
-console.log(document.head);
-console.log(document.body);
-console.log(document.documentElement);
-console.log(document.doctype);
-console.log(document.charset);
-console.log(document.title);
-console.log(document.links);
-console.log(document.images);
-console.log(document.forms);
-console.log(document.styleSheets);
-console.log(document.scripts);
+/* 
+console.log(window); // El objeto padre el contexto global es winodow
+console.log(window.document); // y de window cuelgan todas las APIs del navegador
+console.log(document); // t_odo lo que cuelga del contexto global no es nesesario escribir window.document window.alert sino que el método en si
+console.log(document.head); // cabecera del HTML
+console.log(document.body); // cuerpo del HTML
+console.log(document.html); // no existe da undefined
+console.log(document.documentElement); // este es el HTML sin incluir el tipo de documento
+console.log(document.doctype); // este si lo entrega
+console.log(document.charset); // el set de caracteres
+console.log(document.title); // el titulo
+console.log(document.links); // enlaces, no es un arreglo, pimero agregarlo a un arreglo y se puede mapear 
+console.log(document.images); // imagenes
+console.log(document.forms); // formularios
+console.log(document.styleSheets); // hojas de estilos
+console.log(document.scripts); // guiones en el documento
 setTimeout(() => {
-  console.log(document.getSelection().toString());
+  console.log(document.getSelection().toString()); // ver lo que esta seleccionado por e cursor
 }, 2000);
-document.write("<h2>Hola Mundo desde el DOM</h2>"); */
+document.write("<h2>Hola Mundo desde el DOM</h2>"); // Lo escribe en al final del documento
+ */
 /*
 
 
@@ -43,7 +45,8 @@ document.write("<h2>Hola Mundo desde el DOM</h2>"); */
 
 */
 //https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
-/* console.log("**********     Curso JavaScript: 62. DOM: Nodos, Elementos y Selectores - #jonmircha     **********");
+/*
+console.log("**********     Curso JavaScript: 62. DOM: Nodos, Elementos y Selectores - #jonmircha     **********");
 console.log(document.getElementsByTagName("li"));
 console.log(document.getElementsByClassName("card"));
 console.log(document.getElementsByName("nombre"));
@@ -57,7 +60,8 @@ console.log(document.querySelector(".card"));
 console.log(document.querySelectorAll(".card"));
 console.log(document.querySelectorAll(".card")[2]);
 console.log(document.querySelector("#menu li"));
-console.log(document.querySelectorAll("#menu li")); */
+console.log(document.querySelectorAll("#menu li"));
+*/
 /*
 
 
@@ -65,7 +69,8 @@ console.log(document.querySelectorAll("#menu li")); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 63. DOM: Atributos y Data-Attributes - #jonmircha     **********");
+/*
+console.log("*********     Curso JavaScript: 63. DOM: Atributos y Data-Attributes - #jonmircha     **********");
 console.log(document.documentElement.lang);
 console.log(document.documentElement.getAttribute("lang"));
 console.log(document.querySelector(".link-dom").href);
@@ -95,7 +100,8 @@ $linkDOM.dataset.description = "Suscríbete a mi canal y comparte";
 console.log($linkDOM.dataset.description);
 console.log($linkDOM.hasAttribute("data-id"));
 $linkDOM.removeAttribute("data-id");
-console.log($linkDOM.hasAttribute("data-id")); */
+console.log($linkDOM.hasAttribute("data-id"));
+*/
 /*
 
 
@@ -103,7 +109,8 @@ console.log($linkDOM.hasAttribute("data-id")); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 64. DOM: Estilos y Variables CSS - #jonmircha     **********");
+/*
+console.log("*********     Curso JavaScript: 64. DOM: Estilos y Variables CSS - #jonmircha     **********");
 const $linkDOM = document.querySelector(".link-dom");
 
 console.log($linkDOM.style);
@@ -141,7 +148,8 @@ $body.style.color = varYellowColor;
 $html.style.setProperty("--dark-color", "#000");
 varDarkColor = getComputedStyle($html).getPropertyValue("--dark-color");
 
-$body.style.setProperty("background-color", varDarkColor); */
+$body.style.setProperty("background-color", varDarkColor);
+*/
 /*
 
 
@@ -149,7 +157,8 @@ $body.style.setProperty("background-color", varDarkColor); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 65. DOM: Clases CSS - #jonmircha     **********");
+/*
+console.log("*********     Curso JavaScript: 65. DOM: Clases CSS - #jonmircha     **********");
 const $card = document.querySelector(".card");
 
 console.log($card);
@@ -170,7 +179,8 @@ $card.classList.toggle("rotate-45");
 $card.classList.replace("rotate-45", "rotate-135");
 $card.classList.add("opacity-80", "sepia");
 $card.classList.remove("opacity-80", "sepia");
-$card.classList.toggle("opacity-80", "sepia"); */
+$card.classList.toggle("opacity-80", "sepia");
+*/
 /*
 
 
@@ -178,7 +188,8 @@ $card.classList.toggle("opacity-80", "sepia"); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 66. DOM: Texto y HTML - #jonmircha     **********");
+/*
+console.log("*********     Curso JavaScript: 66. DOM: Texto y HTML - #jonmircha     **********");
 const $whatIsDOM = document.getElementById("que-es");
 let text = `
     <p>
@@ -195,7 +206,8 @@ let text = `
 //$whatIsDOM.innerText = text;
 $whatIsDOM.textContent = text;
 $whatIsDOM.innerHTML = text;
-$whatIsDOM.outerHTML = text; */
+$whatIsDOM.outerHTML = text;
+*/
 /*
 
 
@@ -203,7 +215,8 @@ $whatIsDOM.outerHTML = text; */
 
 
 */
-/* console.log("*********     Curso JavaScript: 67. DOM Traversing: Recorriendo el DOM - #jonmircha     **********");
+/*
+console.log("*********     Curso JavaScript: 67. DOM Traversing: Recorriendo el DOM - #jonmircha     **********");
 const $cards = document.querySelector(".cards");
 
 console.log($cards);
@@ -216,7 +229,8 @@ console.log($cards.previousElementSibling);
 console.log($cards.nextElementSibling);
 console.log($cards.closest("div"));
 console.log($cards.closest("body"));
-console.log($cards.children[3].closest("section")); */
+console.log($cards.children[3].closest("section"));
+*/
 /*
 
 
@@ -224,7 +238,8 @@ console.log($cards.children[3].closest("section")); */
 
 
  */
-/* console.log("*********     Curso JavaScript: 68. DOM: Creando Elementos y Fragmentos - #jonmircha     **********");
+/*
+console.log("*********     Curso JavaScript: 68. DOM: Creando Elementos y Fragmentos - #jonmircha     **********");
 const $figure = document.createElement("figure"),
   $img = document.createElement("img"),
   $figcaption = document.createElement("figcaption"),
@@ -294,7 +309,8 @@ meses.forEach((el) => {
 
 document.write("<h3>Meses del Año</h3>");
 $ul3.appendChild($fragment);
-document.body.appendChild($ul3); */
+document.body.appendChild($ul3);
+*/
 /*
 
 
@@ -302,7 +318,8 @@ document.body.appendChild($ul3); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 69. DOM: Templates HTML - #jonmircha     *********");
+/*
+console.log("*********     Curso JavaScript: 69. DOM: Templates HTML - #jonmircha     *********");
 const $cards = document.querySelector(".cards"),
   $template = document.getElementById("template-card").content,
   $fragment = document.createDocumentFragment(),
@@ -338,7 +355,8 @@ cardsContent.forEach((el) => {
   $fragment.appendChild($clone);
 });
 
-$cards.appendChild($fragment); */
+$cards.appendChild($fragment);
+*/
 /*
 
 
@@ -346,7 +364,8 @@ $cards.appendChild($fragment); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 70. DOM: Modificando Elementos (Old Style) - #jonmircha     *********");
+/*
+console.log("*********     Curso JavaScript: 70. DOM: Modificando Elementos (Old Style) - #jonmircha     *********");
 const $cards = document.querySelector(".cards"),
   $newCard = document.createElement("figure"),
   $cloneCards = $cards.cloneNode(true);
@@ -360,7 +379,8 @@ $newCard.classList.add("card");
 //$cards.replaceChild($newCard, $cards.children[2]);
 //$cards.removeChild($cards.lastElementChild);
 $cards.insertBefore($newCard, $cards.firstElementChild);
-document.body.appendChild($cloneCards); */
+document.body.appendChild($cloneCards);
+*/
 /*
 
 
@@ -368,7 +388,6 @@ document.body.appendChild($cloneCards); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 71. DOM: Modificando Elementos (Cool Style) - #jonmircha     *********"); */
 /*
 .insertAdjacent...
   .insertAdjacentElement(position, el)
@@ -381,7 +400,9 @@ Posiciones:
   beforeend(ultimo hijo)
   afterend(hermano siguiente)
 */
-/* const $cards = document.querySelector(".cards"),
+/*
+console.log("*********     Curso JavaScript: 71. DOM: Modificando Elementos (Cool Style) - #jonmircha     *********");
+const $cards = document.querySelector(".cards"),
   $newCard = document.createElement("figure");
 
 let $contenCard = `
@@ -392,7 +413,8 @@ $newCard.classList.add("card");
 
 $newCard.insertAdjacentHTML("afterbegin", $contenCard);
 $cards.insertAdjacentElement("beforeend", $newCard);
-$newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any"); */
+$newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any");
+*/
 //$cards.prepend($newCard);
 //$cards.append($newCard);
 //$cards.before($newCard);
@@ -404,7 +426,6 @@ $newCard.querySelector("figcaption").insertAdjacentText("afterbegin", "Any"); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 72. DOM: Manejadores de Eventos - #jonmircha y Curso JavaScript: 73. DOM: Eventos con Parámetros y Remover Eventos - #jonmircha     *********"); */
 /*
 Los eventos son los mecanismos que tenemos en JavaScript para controlar las acciones del usuario y definir el comportamiento del documento en cierto momento o cuando se cumplan ciertas condiciones.
 
@@ -412,7 +433,10 @@ Las funciones que se ejecutan en un evento se llaman Event Handler (Manejador de
 
 https://developer.mozilla.org/en-US/docs/Web/Events
 */
-/* function holaMundo() {
+/*
+console.log("*********     Curso JavaScript: 72. DOM: Manejadores de Eventos - #jonmircha y Curso JavaScript: 73. DOM: Eventos con Parámetros y Remover Eventos - #jonmircha     *********");
+
+function holaMundo() {
   alert("Hola Mundo");
   console.log(event);
 }
@@ -453,7 +477,8 @@ const removerDobleClick = (e) => {
   $eventoRemover.disabled = true;
 };
 
-$eventoRemover.addEventListener("dblclick", removerDobleClick); */
+$eventoRemover.addEventListener("dblclick", removerDobleClick);
+*/
 /*
 
 
@@ -461,13 +486,13 @@ $eventoRemover.addEventListener("dblclick", removerDobleClick); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 74. DOM: Flujo de Eventos (Burbuja y Captura) - #jonmircha     *********"); */
 /*
 Si no se especifica el parámetro boolean, el valor por defecto es false.
-  Si el boolean es falso se ejecuta la fase de burbuja (ir del elemento más interno al más externo <body>)
-  Si el boolean es verdadero se ejecuta la fase de captura (ir del elemento más externo <body> al más interno)
+Si el boolean es falso se ejecuta la fase de burbuja (ir del elemento más interno al más externo <body>)
+Si el boolean es verdadero se ejecuta la fase de captura (ir del elemento más externo <body> al más interno)
 */
-/* const $divsEventos = document.querySelectorAll(".eventos-flujo div");
+/* console.log("*********     Curso JavaScript: 74. DOM: Flujo de Eventos (Burbuja y Captura) - #jonmircha     *********");
+const $divsEventos = document.querySelectorAll(".eventos-flujo div");
 
 function flujoEventos(e) {
   console.log(
@@ -495,7 +520,8 @@ $divsEventos.forEach((div) => {
 
 
 */
-/* console.log("*********     Curso JavaScript: 75. DOM: stopPropagation & preventDefault - #jonmircha     *********");
+/*
+console.log("*********     Curso JavaScript: 75. DOM: stopPropagation & preventDefault - #jonmircha     *********");
 const $divsEventos = document.querySelectorAll(".eventos-flujo div"),
   $linkEventos = document.querySelector(".eventos-flujo a");
 
@@ -524,7 +550,8 @@ $linkEventos.addEventListener("click", (e) => {
   alert("Hola soy tu amigo y docente digital... Jonathan MirCha");
   e.preventDefault();
   e.stopPropagation();
-}); */
+});
+*/
 /*
 
 
@@ -532,7 +559,8 @@ $linkEventos.addEventListener("click", (e) => {
 
 
 */
-/* console.log("*********     Curso JavaScript: 76. DOM: Delegación de Eventos - #jonmircha     *********");
+/*
+console.log("*********     Curso JavaScript: 76. DOM: Delegación de Eventos - #jonmircha     *********");
 function flujoEventos(e) {
   console.log(
     `Hola te saluda ${this} el click lo originó ${e.target.className}`
@@ -550,7 +578,8 @@ document.addEventListener("click", (e) => {
     e.preventDefault();
     //e.stopPropagation();
   }
-}); */
+});
+*/
 /*
 
 
@@ -558,7 +587,6 @@ document.addEventListener("click", (e) => {
 
 
 */
-/* console.log("*********     Curso JavaScript: 77. BOM: Propiedades y Eventos - #jonmircha     *********"); */
 /*
 El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado y parseado, sin esperar hojas de estilo, imágenes y subtramas para finalizar la carga.
 
@@ -568,7 +596,9 @@ Es un error frecuente usar load cuando DOMContentLoaded es mucho más apropiado.
 
 Peticiones asíncronas pausan el parseo del DOM.
 */
-/* window.addEventListener("resize", (e) => {
+/*
+console.log("*********     Curso JavaScript: 77. BOM: Propiedades y Eventos - #jonmircha     *********");
+window.addEventListener("resize", (e) => {
   console.clear();
   console.log("********** Evento Resize **********");
   console.log(window.innerWidth);
@@ -598,7 +628,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
   console.log(window.screenX);
   console.log(window.screenY);
   console.log(e);
-}); */
+});
+*/
 /*
 
 
@@ -606,11 +637,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 */
-/* console.log("*********     Curso JavaScript: 78. BOM: Métodos - #jonmircha     *********"); */
 //window.alert("Alerta");
 //window.confirm("Confirmación");
 //window.prompt("Aviso");
-/* const $btnAbrir = document.getElementById("abrir-ventana"),
+/*
+console.log("*********     Curso JavaScript: 78. BOM: Métodos - #jonmircha     *********");
+const $btnAbrir = document.getElementById("abrir-ventana"),
   $btnCerrar = document.getElementById("cerrar-ventana"),
   $btnImprimir = document.getElementById("imprimir-ventana");
 
@@ -626,7 +658,8 @@ $btnCerrar.addEventListener("click", (e) => {
   ventana.close();
 });
 
-$btnImprimir.addEventListener("click", (e) => window.print()); */
+$btnImprimir.addEventListener("click", (e) => window.print());
+*/
 /*
 
 
@@ -634,7 +667,8 @@ $btnImprimir.addEventListener("click", (e) => window.print()); */
 
 
 */
-/* console.log("*********     Curso JavaScript: 79. BOM: Objetos: URL, Historial y Navegador - #jonmircha     *********");
+/*
+console.log("*********     Curso JavaScript: 79. BOM: Objetos: URL, Historial y Navegador - #jonmircha     *********");
 console.log("********** Objeto URL (location) **********");
 console.log(location);
 console.log(location.origin);
@@ -665,4 +699,5 @@ console.log(navigator.onLine);
 console.log(navigator.serviceWorker);
 console.log(navigator.storage);
 console.log(navigator.usb);
-console.log(navigator.userAgent); */
+console.log(navigator.userAgent);
+*/
