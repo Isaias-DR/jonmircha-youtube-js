@@ -105,36 +105,36 @@ console.log(`62.15 querySelectorAll("#menu li")`, document.querySelectorAll("#me
 */
 /*
 console.log("*********     Curso JavaScript: 63. DOM: Atributos y Data-Attributes - #jonmircha     **********");
-console.log(document.documentElement.lang);
-console.log(document.documentElement.getAttribute("lang"));
-console.log(document.querySelector(".link-dom").href);
-console.log(document.querySelector(".link-dom").getAttribute("href"));
+console.log(`63.1 `, document.documentElement.lang);
+console.log(`63.2 `, document.documentElement.getAttribute("lang")); // es lo mismo que documentElement.lang pero como no siempre lo trae esta esta forma
+console.log(`63.3 `, document.querySelector(".link-dom").href); // Trae toda la url a la que ira desde el http asta el .html
+console.log(`63.4 `, document.querySelector(".link-dom").getAttribute("href"));
 
 document.documentElement.lang = "en";
-console.log(document.documentElement.lang);
+console.log(`63.5 `, document.documentElement.lang);
 document.documentElement.setAttribute("lang", "es-MX");
-console.log(document.documentElement.lang);
+console.log(`63.6 `, document.documentElement.lang);
 
 const $linkDOM = document.querySelector(".link-dom");
 
 $linkDOM.setAttribute("target", "_blank");
-$linkDOM.setAttribute("rel", "noopener");
+$linkDOM.setAttribute("rel", "noopener"); // Que no haya una en la pestaña actual con la que se abre. Indica al navegador que navegue hasta el recurso de destino sin otorgar al nuevo contexto de navegación acceso al documento que lo abrió 
 $linkDOM.setAttribute("href", "https://youtube.com/jonmircha");
-console.log($linkDOM.hasAttribute("rel"));
+console.log(`63.7 `, $linkDOM.hasAttribute("rel"));
 $linkDOM.removeAttribute("rel");
-console.log($linkDOM.hasAttribute("rel"));
+console.log(`63.8 `, $linkDOM.hasAttribute("rel"));
 
 //Data-Attributes
-console.log($linkDOM.getAttribute("data-description"));
-console.log($linkDOM.dataset);
-console.log($linkDOM.dataset.description);
+console.log(`63.9 `, $linkDOM.getAttribute("data-description"));
+console.log(`63.10 `, $linkDOM.dataset); // Es un Map
+console.log(`63.11 `, $linkDOM.dataset.description); // Es lo mismo que $linkDOM.getAttribute("data-description")
 $linkDOM.setAttribute("data-description", "Modelo de Objeto del Documento");
-console.log($linkDOM.dataset.description);
+console.log(`63.12 `, $linkDOM.dataset.description);
 $linkDOM.dataset.description = "Suscríbete a mi canal y comparte";
-console.log($linkDOM.dataset.description);
-console.log($linkDOM.hasAttribute("data-id"));
+console.log(`63.13 `, $linkDOM.dataset.description);
+console.log(`63.14 `, $linkDOM.hasAttribute("data-id"));
 $linkDOM.removeAttribute("data-id");
-console.log($linkDOM.hasAttribute("data-id"));
+console.log(`63.15 `, $linkDOM.hasAttribute("data-id"));
 */
 /*
 
