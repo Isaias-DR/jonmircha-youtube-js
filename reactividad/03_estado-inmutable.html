@@ -70,9 +70,9 @@
     //Estado Inmutable, porque al obtener una copia del State con getState, NO se modifica el estado original directamente, para modificarlo tenemos que hacer uso de setState
 
     //const items = state.todoList;
-    const items = getState();
+    const items = getState().todoList;
     //items.push("Tarea 4");
-    items.todoList.push("Tarea 4")
+    items.push("Tarea 4")
     //console.log("Estado Mutable", state);
     console.log("Estado Inmutable", state);
 
