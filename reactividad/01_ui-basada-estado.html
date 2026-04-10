@@ -40,7 +40,8 @@
 
       const $list = d.getElementById("todo-list");
       if (!$list) return;
-      $list.innerHTML = template();
+      const HTML = template()
+      $list.innerHTML = HTML;
     }
 
     d.addEventListener("DOMContentLoaded", render);
